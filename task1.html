@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One in CSS</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 50%;
+            margin: 20px auto;
+
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: yellow;
+        }
+      .description {
+            font-size: medium;
+            text-align: center;
+            width: 50%;             
+            margin: 0 auto 10px;     
+            border-bottom: 2px solid gray; 
+            padding-bottom: 5px;   
+        }
+        #NinjaA{
+            background-color: brown;
+            text-align: center;
+        }
+        #bold{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <p class="description">Ninja Details</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td id="NinjaA">Ninja A</td>
+                <td>18</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Ninja B</td>
+                <td>18</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Ninja C</td>
+                <td>18</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td id="bold" colspan="3">Ninja C is the best learner</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

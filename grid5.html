@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1 - Grid</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+     
+        .container {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            border: 14px solid #f0c14e;
+            overflow: hidden;
+        }
+        .bar {
+            height: 100vh;
+            display: grid;
+            place-items: start center;
+            padding-top: 55px;
+            font-size: 6.8rem;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar" style="background:#1e9e34;">1</div>
+        <div class="bar" style="background:#ffeb3b; color:#1f1f1f;">2</div>
+        <div class="bar" style="background:#8e24aa;">3</div>
+        <div class="bar" style="background:#546e7a;">4</div>
+        <div class="bar" style="background:#1565c0;">5</div>
+        <div class="bar" style="background:#f57c00;">6</div>
+        <div class="bar" style="background:#f06292;">7</div>
+        <div class="bar" style="background:#e53935;">8</div>
+        <div class="bar" style="background:#5d4037;">9</div>
+    </div>
+</body>
+</html>

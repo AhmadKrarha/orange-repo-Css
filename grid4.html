@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1 - Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;   
+            grid-template-rows: 130px 380px 130px; 
+            gap: 15px;
+            grid-template-areas:
+                "black black"
+                "orange green"
+                "blue blue";
+        }
+        .black {
+            grid-area: black;
+            background-color: #000000;
+        }
+
+        .orange {
+            grid-area: orange;
+            background-color: #ff9900;
+        }
+
+        .green {
+            grid-area: green;
+            background-color: #008800;
+        }
+
+        .blue {
+            grid-area: blue;
+            background-color: #0066ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="black"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+
+</body>
+</html>

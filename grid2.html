@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3 - Photo Gallery</title>
+    <style>
+        body {
+            margin: 40px 0;
+            background-color: #f8f9fa;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);   
+            gap: 5px;
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .grid-item img {
+            width: 100%;        
+            height: 100%;
+            object-fit: cover;  
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Mountain"></div>
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Lake"></div>
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Forest"></div>
+
+        <div class="grid-item"><img src="images\download (2).jpg" alt="City"></div>
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Cherry Blossom"></div>
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Piano"></div>
+
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Violin"></div>
+        <div class="grid-item"><img src="images\download (2).jpg" alt="Guitar"></div>
+    </div>
+
+</body>
+</html>

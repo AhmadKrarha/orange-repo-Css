@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 4 Part 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .first.block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 20px;
+            height: 70vh;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .field {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 8px 0;
+        }
+
+        label {
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            text-align: left;
+            width: 100%;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0800fb;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            width: 35%;
+            font-size: 16px;
+            margin-top: 12px;
+        }
+
+        body {
+            background-color: rgb(92, 142, 230);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-family: sans-serif;
+            letter-spacing: -1px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first block">
+        <h1>CODEWITHRANDOM</h1>
+        <p>thank you for being with me</p>
+
+        <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text">
+        </div>
+
+        <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email">
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+        </div>
+
+        <div class="field">
+            <label for="repeat-password">Repeat password</label>
+            <input id="repeat-password" name="repeat-password" type="password">
+        </div>
+
+        <button type="submit">Register</button>
+    </div>
+</body>
+
+</html>

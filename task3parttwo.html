@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task three part two</title>
+    <style>
+        .container {
+            display: flex;
+            height: 70vh;
+            width: 70%;
+            margin: 100px auto;
+            background-color: white;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+
+        }
+
+        input[type=email],
+        input[type=password] {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 9999px;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        button {
+            background-color: #2ec604;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 60%;
+            font-size: 16px;
+        }
+
+        a {
+            margin-top: 20px;
+            color: #2ec604;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        body {
+            background-color: blueviolet;
+        }
+
+        h2 {
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="images\download (2).jpg" alt="Laptop illustration">
+        </div>
+        <div class="right">
+            <h2>Member Login</h2>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class="login-btn">LOGIN</button>
+            <div class="links">
+                <a href="#">Forgot Username / Password ?</a><br><br>
+                <a href="#">Create your account ➞</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
